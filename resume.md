@@ -15,13 +15,13 @@ Computer Security; Usable Security and Privacy; Cyber Psychology
 ### Master of Science in Information Technology
 Advisor: Prof. Edwin Mugume
 
-`2008 - 2012` 	Makerere University - Kampala, Uganda
+`2008 - 2012` 	__Makerere University - Kampala, Uganda__
 ### Bachelor of Science in Computer Science
 Advisors: Dr. Mary Nsabagwa, Dr. John Ngubiri and Dr. Ronald Azairwe
 
 ## Publications
-2019 		Cyber Security in Africa: The boring technology story that matters 
-H Mukiibi (XRDS: Crossroads, The ACM Magazine for Students 26 (2), 56-59)
+`2019` 		__Cyber Security in Africa: The boring technology story that matters__
+H Mukiibi _(XRDS: Crossroads, The ACM Magazine for Students 26 (2), 56-59)_
 
 ## Teaching Experience
 
