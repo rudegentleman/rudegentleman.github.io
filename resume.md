@@ -10,9 +10,11 @@ hudmukiibi@gmail.com || rudegentleman.github.io || +256 775 142 292
 Computer Security; Usable Security and Privacy; Cyber Psychology
 
 ## Education
+
 `2016 - 2018` 	__Carnegie Mellon University - Pittsburgh, PA__
 ### Master of Science in Information Technology
 Advisor: Prof. Edwin Mugume
+
 `2008 - 2012` 	Makerere University - Kampala, Uganda
 ### Bachelor of Science in Computer Science
 Advisors: Dr. Mary Nsabagwa, Dr. John Ngubiri and Dr. Ronald Azairwe
