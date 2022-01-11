@@ -1,1 +1,1 @@
-[Hood S. Mukiibi - Updated CV.pdf](https://github.com/rudegentleman/rudegentleman.github.io/files/7844510/Hood.S.Mukiibi.-.Updated.CV.pdf)
+[Hood S. Mukiibi - Updated CV.pdf](https://github.com/rudegentleman/rudegentleman.github.io/blob/main/Hood%20S.%20Mukiibi%20-%20Updated%20CV.pdf)
