@@ -5,12 +5,11 @@ menutitle: Home
 menuorder: 1
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+I am a Security Engineer currently working with Tabiri Analytics, Inc., a start up providing affordable cyber security monitoring for underserved markets mainly within sub-saharan Africa. Located in Kigali, Rwanda, we work with in-house IT Staff as an extension to their IT team with a focus of continously monitoring system for cyber threats. We are utilising open source tools to build a smart, automated intrusion detection system that encompasses the use of machine learning concepts to detect anomalies in systems. As a security lead, I work with a team of security engineers to deliver complex security services like continous monitoring, vulnerability assessments and penetration testing, compliance and risk assessments as well as engage and manage stakeholder relationships.  
 
 ## Current Interests and Projects:
 
-- Lorem ipsum dolor sit amet
-- Lorem ipsum dolor sit amet
-- DLorem ipsum dolor sit amet
-- Lorem ipsum dolor sit amet
-- Lorem ipsum dolor sit amet
+- Usable security
+- Privacy, policy, law and how this influences policy
+- Information Assurance and Forensics
+- Currently learning python :)
