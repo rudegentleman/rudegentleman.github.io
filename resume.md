@@ -1,5 +1,5 @@
 ---
-layout: post-index
+layout: resume
 title: Updated Resume
 menutitle: Resume
 menuorder: 3
