@@ -1,7 +1,7 @@
 ---
 layout: resume
-title: Updated Resume
+title: Resume
 menutitle: Resume
-menuorder: 3
+menuorder:
 url: /Hood_S_Mukiibi_Updated_CV.pdf
 ---
