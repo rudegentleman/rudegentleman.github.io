@@ -6,7 +6,7 @@
   
 - title: Publications
   url: /presentations/
-  menuorder: 2
+  menuorder: 
   
   
 - title: Resume
@@ -16,5 +16,5 @@
   
 - title: Blog
   url: /blog/
-  menuorder: 4
+  menuorder: 
 
