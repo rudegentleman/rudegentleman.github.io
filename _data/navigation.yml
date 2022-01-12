@@ -1,5 +1,20 @@
 # Site navigation links
-- title: 
-  url: 
-  menuorder: 
+- title: Home
+  url: /
+  menuorder: 1
+  
+  
+- title: Publications
+  url: /presentations/
+  menuorder: 2
+  
+  
+- title: Resume
+  url: /Hood_S_Mukiibi_Updated_CV.pdf
+  menuorder: 3
+  
+  
+- title: Blog
+  url: /blog/
+  menuorder: 4
 
