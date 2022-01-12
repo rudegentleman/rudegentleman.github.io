@@ -1,10 +1,4 @@
 # Site navigation links
-- title: Home
-  url: /
-  menuorder: 1
-  
 - title: Resume
   url: /Hood_S_Mukiibi_Updated_CV.pdf
   menuorder: 3
-
-
