@@ -1,8 +1,6 @@
 ---
 layout: page
 excerpt: "About Me..."
-menutitle: Home
-menuorder: 1
 ---
 
 I am a Security Engineer currently working with [Tabiri Analytics, Inc.](https://tabirianalytics.com/), a start up providing affordable cyber security monitoring for underserved markets mainly within sub-saharan Africa. 
