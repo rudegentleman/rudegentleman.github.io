@@ -2,7 +2,7 @@
 layout: page
 excerpt: "About Me..."
 ---
-<div style="text-align: justify;">
+<div style="text-align: center;">
 I am a security engineer turned data analyst with a passion for leveraging exploratory and explanatory data analysis to help organizations swiftly detect threats and anomalies within their infrastructure. Currently, I am part of a team developing a smart, automated intrusion detection system that utilizes big data and machine learning concepts to enhance threat detection capabilities. Additionally, I collaborate with a team of security engineers to deliver complex security services, including threat hunting, log monitoring, vulnerability assessments, penetration testing, compliance, operational risk assessments, and managing stakeholder relationships.
 
 One of my key strengths is my ability to effectively communicate with both technical and non-technical personnel, simplifying complex concepts for broader understanding. I excel at identifying and addressing communication gaps, enhancing overall information flow. My diverse experience spans various organizational settings, from large corporations to startup environments, across both private and public sectors. I am loyal, trustworthy, and excel in crisis situations. I am currently open to new opportunities in data science and cybersecurity.
