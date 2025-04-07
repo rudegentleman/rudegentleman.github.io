@@ -4,7 +4,6 @@ title: "Key Projects"
 excerpt: Projects
 ---
 
-## KEY PROJECTS
 **Security Operations & Incident Response**
 - **Incident Response & Threat Hunting (Tabiri Analytics, Rohde & Schwarz)** – Conducted root-cause analysis on security incidents, improving threat detection capabilities using Elastic SIEM.
 - **AI-Assisted Security Operations (CMU - CyLab)** – Integrated LLM-based AI assistants into SOC workflows to enhance alert triage and case management. Optimized prompt engineering techniques to improve SOC analysts' response effectiveness during security incidents.
