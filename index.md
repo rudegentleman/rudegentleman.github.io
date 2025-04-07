@@ -3,15 +3,11 @@ layout: page
 excerpt: "About Me..."
 ---
 
-**Hi, I’m Hud**:- a security engineer turned data analyst passionate about solving complex cybersecurity challenges and building resilient systems that make a real-world impact. Over the past decade, I’ve carved out a dynamic career that bridges deep technical expertise with strategic advisory roles across global teams and mission-critical environments.
-
-These days, I’m part of the [Upanzi Network Lab](https://www.africa.engineering.cmu.edu/research/upanzi/index.html) at Carnegie Mellon University’s [Cybersecurity lab (CyLab)](https://www.cylab.cmu.edu/), where I lead the development of smart, automated Security Operations Centers (SOCs). My work blends big data, machine learning, and LLM-powered assistants to supercharge threat detection, streamline alert triage, and drive down response times.
-
-Over the years, I’ve worn a lot of hats — from investigating security gaps in 5G and IIoT environments, leading critical infrastructure assessments, to building and running open-source SOCs. I’ve collaborated with cloud teams, trained analysts, advised on cybersecurity policy in sectors like healthcare, telecoms, digital identity, and payments — always with one goal in mind: build secure systems and empower people to protect them.
-
-Beyond the tech, I’m passionate about bridging the gap between research and real-world impact. Whether it’s mentoring future cybersecurity talent, helping organizations navigate evolving risks, or just breaking down complex security topics for non-technical folks — I love making the tough stuff more accessible.
-
-Now based in the beautifully green state of Washington, I’m always up for a good conversation, an exciting project, or swapping war stories from the frontlines of cybersecurity.
+<div style="text-align: justify"> **Hi, I’m Hud**:- a security engineer turned data analyst passionate about solving complex cybersecurity challenges and building resilient systems that make a real-world impact. Over the past decade, I’ve carved out a dynamic career that bridges deep technical expertise with strategic advisory roles across global teams and mission-critical environments.</div>
+<div style="text-align: justify"> These days, I’m part of the [Upanzi Network Lab](https://www.africa.engineering.cmu.edu/research/upanzi/index.html) at Carnegie Mellon University’s [Cybersecurity lab (CyLab)](https://www.cylab.cmu.edu/), where I lead the development of smart, automated Security Operations Centers (SOCs). My work blends big data, machine learning, and LLM-powered assistants to supercharge threat detection, streamline alert triage, and drive down response times.</div>
+<div style="text-align: justify"> Over the years, I’ve worn a lot of hats; from investigating security gaps in 5G and IIoT environments, leading critical infrastructure assessments, to building and running open-source SOCs. I’ve collaborated with cross functional teams, trained security analysts, advised on cybersecurity policy in sectors like healthcare, telecoms, digital identity, and payments — always with one goal in mind: build secure systems and empower people to protect them.</div>
+<div style="text-align: justify"> Beyond the tech, I’m passionate about bridging the gap between research and real-world impact. Whether it’s mentoring future cybersecurity talent, helping organizations navigate evolving risks, or just breaking down complex security topics for non-technical folks, I love making the tough stuff more accessible.</div>
+<div style="text-align: justify"> Now based in the beautifully green state of Washington, I’m always up for a good conversation, a good cup of coffee, an exciting project, or swapping war stories from the frontlines of cybersecurity. If you've got something worth building, breaking, or securing, let's talk.</div>
 
 ## Interests
 
