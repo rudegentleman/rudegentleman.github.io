@@ -20,7 +20,7 @@ Now based in the beautifully green state of Washington, I’m always up for a go
 
 ## Interests
 
-- **Security Data Science**  
+- **Machine Learning and AI in Security**  
   Exploring how data analytics, machine learning, and AI can supercharge threat detection, incident response, and SOC automation.
 - **Cyber Threat Intelligence & Adversary Simulation**  
   Passionate about building and testing proactive defense strategies—modeling adversary behavior, threat hunting, and leveraging telemetry for actionable insights.
