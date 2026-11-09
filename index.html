@@ -114,6 +114,18 @@
   .links a{font-weight:600;min-width:90px}
   .links span{color:var(--muted);font-size:.95rem}
 
+  /* contact form */
+  form#contactForm{max-width:520px}
+  .field{margin-bottom:16px}
+  .field label{display:block;font-size:.88rem;font-weight:600;margin-bottom:6px}
+  .field input,.field textarea{width:100%;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+  .field input:focus,.field textarea:focus{border-color:var(--accent);outline:none;box-shadow:0 0 0 3px var(--accent-soft)}
+  .field textarea{resize:vertical;min-height:120px}
+  .hp{position:absolute;left:-9999px;height:0;overflow:hidden}
+  button.btn{cursor:pointer;font-family:inherit}
+  button.btn:disabled{opacity:.6;cursor:wait}
+  #cf-status{margin:12px 0 0;font-size:.92rem;color:var(--muted)}
+
   footer{border-top:1px solid var(--line);padding:28px 0 48px;color:var(--muted);font-size:.88rem}
   footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
   :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
@@ -381,11 +393,27 @@
     <section id="contact">
       <h2>Contact</h2>
       <p class="sub">If you’ve got something worth building, breaking, or securing, let’s talk.</p>
-      <p>
-        Email: <a href="#" id="email" rel="nofollow">Click to reveal</a><br>
-        Location: Greater Seattle Area, WA
-      </p>
-      <p style="color:var(--muted);font-size:.95rem">Always up for a good conversation, a good cup of coffee, or swapping war stories from the frontlines of cybersecurity.</p>
+      <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="field">
+          <label for="cf-name">Name</label>
+          <input id="cf-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="cf-email">Your email</label>
+          <input id="cf-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="cf-msg">Message</label>
+          <textarea id="cf-msg" name="message" rows="5" required></textarea>
+        </div>
+        <!-- Honeypot: real visitors never see or fill this -->
+        <div class="hp" aria-hidden="true">
+          <label>Leave this empty <input name="_gotcha" type="text" tabindex="-1" autocomplete="off"></label>
+        </div>
+        <button class="btn primary" type="submit" id="cf-submit">Send message</button>
+        <p id="cf-status" role="status" aria-live="polite"></p>
+      </form>
+      <p style="color:var(--muted);font-size:.95rem;margin-top:20px">Based in the Greater Seattle area. Always up for a good conversation, a good cup of coffee, or swapping war stories from the frontlines of cybersecurity.</p>
     </section>
 
   </div>
@@ -402,16 +430,30 @@
   // Year
   document.getElementById('yr').textContent = new Date().getFullYear();
 
-  // Email obfuscation (assembled at click time to avoid simple scrapers)
+  // Contact form: posts to Formspree and shows the result inline
   (function(){
-    var el = document.getElementById('email');
-    var user = 'hudmukiibi', host = ['gmail','com'].join('.');
-    el.addEventListener('click', function(e){
+    var form = document.getElementById('contactForm');
+    var status = document.getElementById('cf-status');
+    var btn = document.getElementById('cf-submit');
+    form.addEventListener('submit', function(e){
       e.preventDefault();
-      var addr = user + '@' + host;
-      el.textContent = addr;
-      el.href = 'mailto:' + addr;
-    }, {once:true});
+      btn.disabled = true;
+      status.textContent = 'Sending…';
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {'Accept': 'application/json'}
+      }).then(function(res){
+        if (res.ok) {
+          form.reset();
+          status.textContent = 'Thanks! Your message was sent and I’ll get back to you soon.';
+        } else {
+          status.textContent = 'Something went wrong. Please try again, or reach out on LinkedIn.';
+        }
+      }).catch(function(){
+        status.textContent = 'Network error. Please try again, or reach out on LinkedIn.';
+      }).finally(function(){ btn.disabled = false; });
+    });
   })();
 
   // Theme toggle (remembered if storage is available)
