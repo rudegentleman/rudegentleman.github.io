@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hood S. Mukiibi — Security Engineer</title>
+<meta name="description" content="Security engineer turned data analyst. Building AI-assisted security operations, from 5G core networks to open-source SOCs. Seattle, WA.">
+<link rel="canonical" href="https://rudegentleman.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hood S. Mukiibi — Security Engineer">
+<meta property="og:description" content="Security engineer turned data analyst. AI-assisted SOCs, 5G/IIoT security, and digital public infrastructure.">
+<meta property="og:url" content="https://rudegentleman.github.io/">
+<meta property="og:image" content="https://rudegentleman.github.io/images/social-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@monsieurHud">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230f766e'/><text x='50' y='68' font-size='54' font-family='monospace' font-weight='700' text-anchor='middle' fill='white'>H</text></svg>">
+<style>
+  :root{
+    --bg:#fafaf7; --surface:#ffffff; --text:#1c1f23; --muted:#5d6670; --line:#e5e5df;
+    --accent:#0f766e; --accent-ink:#ffffff; --accent-soft:#e3f2ef;
+    --maxw:760px;
+    --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0e1214; --surface:#151a1d; --text:#e8ecee; --muted:#9aa5ad; --line:#252d32;
+      --accent:#2dd4bf; --accent-ink:#06201d; --accent-soft:#12302d;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0e1214; --surface:#151a1d; --text:#e8ecee; --muted:#9aa5ad; --line:#252d32;
+    --accent:#2dd4bf; --accent-ink:#06201d; --accent-soft:#12302d;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
+  a:hover{text-decoration-thickness:2px}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+  /* nav */
+  header.nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:12px}
+  .brand{font-family:var(--mono);font-weight:700;color:var(--text);text-decoration:none;letter-spacing:-.02em}
+  .brand span{color:var(--accent)}
+  nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;font-size:.9rem}
+  nav a{color:var(--muted);text-decoration:none}
+  nav a:hover{color:var(--text)}
+  .theme-btn{background:none;border:1px solid var(--line);color:var(--muted);border-radius:8px;width:34px;height:34px;cursor:pointer;font-size:1rem}
+  .theme-btn:hover{color:var(--text);border-color:var(--muted)}
+  @media (max-width:640px){nav ul{display:none}}
+
+  /* hero */
+  .hero{padding:72px 0 40px}
+  .hero-grid{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center}
+  .avatar{width:128px;height:128px;border-radius:50%;object-fit:cover;border:3px solid var(--accent-soft);background:var(--accent-soft)}
+  .eyebrow{font-family:var(--mono);font-size:.8rem;color:var(--accent);letter-spacing:.06em;text-transform:uppercase;margin:0 0 6px}
+  h1{font-size:clamp(2rem,5vw,2.8rem);line-height:1.1;margin:0 0 8px;letter-spacing:-.03em}
+  .tagline{font-size:1.15rem;color:var(--muted);margin:0}
+  .lede{font-size:1.1rem;margin:28px 0 24px}
+  .btns{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;padding:10px 18px;border-radius:10px;font-weight:600;font-size:.95rem;text-decoration:none;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+  .btn:hover{border-color:var(--accent)}
+  .btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+  .btn.primary:hover{filter:brightness(1.08)}
+  @media (max-width:560px){.hero-grid{grid-template-columns:1fr;text-align:left}.avatar{width:104px;height:104px}}
+
+  /* sections */
+  section{padding:48px 0;border-top:1px solid var(--line)}
+  h2{font-size:1.5rem;letter-spacing:-.02em;margin:0 0 4px}
+  .sub{color:var(--muted);margin:0 0 28px;font-style:italic}
+  p{margin:0 0 1em}
+
+  /* timeline */
+  .job{display:grid;grid-template-columns:150px 1fr;gap:8px 24px;padding:0 0 30px}
+  .job .when{font-family:var(--mono);font-size:.82rem;color:var(--muted);padding-top:5px}
+  .job h3{margin:0;font-size:1.1rem}
+  .job .org{color:var(--accent);font-weight:600}
+  .job .where{color:var(--muted);font-size:.9rem;margin:0 0 10px}
+  .job ul{margin:8px 0 0;padding-left:1.1em}
+  .job li{margin-bottom:6px}
+  .tag{display:inline-block;font-family:var(--mono);font-size:.7rem;padding:2px 8px;border-radius:99px;background:var(--accent-soft);color:var(--accent);margin-left:8px;vertical-align:middle}
+  @media (max-width:640px){.job{grid-template-columns:1fr;gap:2px}}
+
+  details.earlier{border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:4px 18px;margin-top:6px}
+  details.earlier summary{cursor:pointer;padding:12px 0;font-weight:600;list-style:none;display:flex;justify-content:space-between}
+  details.earlier summary::-webkit-details-marker{display:none}
+  details.earlier summary::after{content:"+";color:var(--accent);font-family:var(--mono)}
+  details.earlier[open] summary::after{content:"–"}
+  .mini{padding:14px 0;border-top:1px solid var(--line)}
+  .mini h4{margin:0;font-size:1rem}
+  .mini .meta{color:var(--muted);font-size:.85rem;font-family:var(--mono);margin:2px 0 6px}
+  .mini p{margin:0;font-size:.95rem}
+
+  /* cards / lists */
+  .cards{display:grid;gap:14px}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+  .card h3{margin:0 0 4px;font-size:1.02rem;line-height:1.35}
+  .card p{margin:0;color:var(--muted);font-size:.93rem}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media (max-width:640px){.two{grid-template-columns:1fr}}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+  .chips li{border:1px solid var(--line);background:var(--surface);border-radius:99px;padding:5px 13px;font-size:.9rem}
+
+  .edu{display:grid;grid-template-columns:150px 1fr;gap:6px 24px;margin-bottom:18px}
+  .edu .when{font-family:var(--mono);font-size:.82rem;color:var(--muted);padding-top:3px}
+  .edu h3{margin:0;font-size:1.05rem}
+  .edu p{margin:0;color:var(--muted);font-size:.95rem}
+  @media (max-width:640px){.edu{grid-template-columns:1fr;gap:0}}
+
+  .links{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+  .links li{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap}
+  .links a{font-weight:600;min-width:90px}
+  .links span{color:var(--muted);font-size:.95rem}
+
+  footer{border-top:1px solid var(--line);padding:28px 0 48px;color:var(--muted);font-size:.88rem}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+  @media print{header.nav,.theme-btn,.btns{display:none}body{background:#fff;color:#000}section{break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">hood<span>.</span>mukiibi</a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle light/dark theme" title="Toggle theme">◐</button>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap">
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-grid">
+        <img class="avatar" src="images/bios-photo.png" alt="Portrait of Hood S. Mukiibi" onerror="this.style.visibility='hidden'">
+        <div>
+          <p class="eyebrow">Security Engineering &amp; Operations</p>
+          <h1>Hood S. Mukiibi</h1>
+          <p class="tagline">Security engineer turned data analyst, building AI-assisted security operations.</p>
+        </div>
+      </div>
+      <p class="lede">
+        I’ve spent over a decade defending networks, from telecom service desks in East Africa to 5G core networks and open-source SOCs. I like turning noisy telemetry into decisions, and complicated security topics into something people can act on. Based in the Greater Seattle area.
+      </p>
+      <div class="btns">
+        <a class="btn primary" href="Hood_S_Mukiibi_Updated_CV.pdf">Download CV</a>
+        <a class="btn" href="#experience">See experience</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About</h2>
+      <p class="sub">What I’m all about.</p>
+      <p>
+        I’m a security engineer with experience across security operations, detection engineering, network security research, audit and compliance. My work blends big data, machine learning and automation to improve threat detection, cut false positives and shorten response times.
+      </p>
+      <p>
+        I’ve led SOC teams, simulated attacks on 5G core networks, assessed critical infrastructure, and mentored analysts. I also care about digital public infrastructure: privacy-preserving identity, payments and health systems, especially across the Global South.
+      </p>
+      <h3 style="font-size:1rem;margin:22px 0 10px">Focus areas</h3>
+      <ul class="chips">
+        <li>SOC automation &amp; detection engineering</li>
+        <li>ML / LLMs for threat detection</li>
+        <li>5G &amp; IIoT security</li>
+        <li>Threat intelligence &amp; hunting</li>
+        <li>Security audits &amp; penetration testing</li>
+        <li>Digital public infrastructure</li>
+        <li>Mentorship &amp; capacity building</li>
+      </ul>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <p class="sub">Yes, I’ve been around.</p>
+
+      <div class="job">
+        <div class="when">Dec 2025 – Present</div>
+        <div>
+          <h3>Information Security Specialist II <span class="tag">current</span></h3>
+          <div class="org">CNA Insurance</div>
+          <p class="where">Chicago, Illinois, United States</p>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="when">Jun 2023 – Jun 2025</div>
+        <div>
+          <h3>Cybersecurity Research Engineer</h3>
+          <div class="org">CyLab-Africa / Upanzi Network, Carnegie Mellon University</div>
+          <p class="where">Kigali, Rwanda</p>
+          <ul>
+            <li>Led development of smart, automated Security Operations Centers combining big data, machine learning and LLM-powered assistants.</li>
+            <li>Focused on improving threat detection, alert triage and response times for digital public infrastructure.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="when">Nov 2023 – Apr 2024</div>
+        <div>
+          <h3>Cybersecurity Research Engineer, 5G &amp; IIoT Security</h3>
+          <div class="org">Rohde &amp; Schwarz</div>
+          <p class="where">Senior Developer II, 5G Core Network Security</p>
+          <ul>
+            <li>Investigated and mitigated vulnerabilities in containerized 5G core network functions and IIoT systems.</li>
+            <li>Simulated targeted attacks on the 5G core to measure impact on user- and control-plane functions.</li>
+            <li>Built monitoring with Prometheus and Grafana for real-time metrics, logs and threat visibility.</li>
+            <li>Led deployment of deep packet inspection tooling to detect traffic anomalies and refine response.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="when">Jan 2019 – Nov 2023</div>
+        <div>
+          <h3>SOC Team Lead</h3>
+          <div class="org">Tabiri Analytics, Inc</div>
+          <p class="where">Dover, Delaware area</p>
+          <ul>
+            <li>Designed an automated intrusion detection system from open-source tools and machine learning.</li>
+            <li>Improved anomaly detection accuracy by 30% and cut false positives by 40% through testing and tuning.</li>
+            <li>Rolled out EDR (Wazuh, Elastic Agent, CrowdStrike Falcon), reducing incident response times by 25%.</li>
+            <li>Ran forensic investigations on endpoint telemetry to contain malware and ransomware.</li>
+            <li>Led a cross-functional team and trained SOC analysts.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="when">Aug 2017 – May 2023</div>
+        <div>
+          <h3>Graduate Teaching Assistant</h3>
+          <div class="org">Carnegie Mellon University</div>
+          <ul>
+            <li>Taught and mentored graduate students in cybersecurity and technology courses, ran hands-on labs, and designed and graded assessments.</li>
+          </ul>
+        </div>
+      </div>
+
+      <details class="earlier">
+        <summary>Earlier career</summary>
+
+        <div class="mini">
+          <h4>IT Support Specialist · Carnegie Mellon University</h4>
+          <div class="meta">Aug 2016 – Aug 2018</div>
+          <p>Supported students, staff and faculty; built extensions for CMU-Africa’s Salesforce admissions portal; administered local web servers.</p>
+        </div>
+        <div class="mini">
+          <h4>System Analyst · Inmarsat · Kigali, Rwanda</h4>
+          <div class="meta">Aug 2017 – Dec 2017</div>
+          <p>Led an IoT deployment at Rwanda Mountain Tea to optimize black tea fermentation, with LoRaWAN devices and real-time predictive analytics.</p>
+        </div>
+        <div class="mini">
+          <h4>Information Security Analyst (Intern) · Rwanda Revenue Authority</h4>
+          <div class="meta">May 2017 – Aug 2017 · Kigali, Rwanda</div>
+          <p>Reviewed security audits, ran vulnerability assessments and penetration tests, and developed a framework for ISO 27001 certification.</p>
+        </div>
+        <div class="mini">
+          <h4>End User Support Engineer / Service Desk Engineer · MTN Uganda</h4>
+          <div class="meta">Jan 2013 – Aug 2016</div>
+          <p>Led end-user support engineers across five operating companies, consistently beating SLA targets by more than 5%. Contributed to an Office 365 migration, contact center virtualization and automated customer queuing.</p>
+        </div>
+        <div class="mini">
+          <h4>IT Volunteer · Nile Basin Discourse · Entebbe, Uganda</h4>
+          <div class="meta">May 2012 – Jan 2013</div>
+          <p>Handled organization-wide IT support, Linux administration, a member forum build, and website redesign.</p>
+        </div>
+        <div class="mini">
+          <h4>UsPEAK Trainer · National Democratic Institute</h4>
+          <div class="meta">Mar 2012 – Aug 2012</div>
+          <p>Trained Members of Parliament of Uganda to use a platform connecting them directly with constituents.</p>
+        </div>
+        <div class="mini">
+          <h4>Customer Service Support Specialist · MTN Uganda</h4>
+          <div class="meta">Jun 2009 – Apr 2011</div>
+          <p>Managed the customer helpline and resolved complaints within SLA.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research">
+      <h2>Research &amp; Publications</h2>
+      <p class="sub">Writing things down so others can build on them.</p>
+      <div class="cards">
+        <div class="card">
+          <h3>Cyber security in Africa: The boring technology story that matters</h3>
+          <p>Essay</p>
+        </div>
+        <div class="card">
+          <h3>Can blockchain technology be used to prove land ownership in Kenya?</h3>
+          <p>Research paper</p>
+        </div>
+        <div class="card">
+          <h3>Assessing Customer Understanding of Data Breach Notifications as an Enhanced Framework for Improving Data Breach Notifications for Organizations</h3>
+          <p>Research paper</p>
+        </div>
+        <div class="card">
+          <h3>Trust and Integrity in the Face of Adversity: An Experiential Study of Change in Group Work Dynamics</h3>
+          <p>Research paper</p>
+        </div>
+      </div>
+      <p style="margin-top:18px"><a href="presentations/">All publications &amp; talks →</a></p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2>Education &amp; Credentials</h2>
+      <p class="sub">Unlocking the door of opportunity.</p>
+
+      <div class="edu">
+        <div class="when">2016 – 2018</div>
+        <div>
+          <h3>Carnegie Mellon University</h3>
+          <p>MSc, Information Technology, Information Security / Information Assurance</p>
+        </div>
+      </div>
+      <div class="edu">
+        <div class="when">2008 – 2012</div>
+        <div>
+          <h3>Makerere University</h3>
+          <p>BSc, Computer Science</p>
+        </div>
+      </div>
+      <div class="edu">
+        <div class="when">Aug – Nov 2022</div>
+        <div>
+          <h3>Udacity</h3>
+          <p>Data Analytics</p>
+        </div>
+      </div>
+
+      <div class="two" style="margin-top:28px">
+        <div class="card">
+          <h3>Certifications</h3>
+          <p>Cisco Certified Network Associate (CCNA)<br>Data Protection and Disaster Recovery</p>
+        </div>
+        <div class="card">
+          <h3>Honors &amp; awards</h3>
+          <p>Innovators Forward Fellowship Fund, Scholarship Award</p>
+        </div>
+        <div class="card">
+          <h3>Languages</h3>
+          <p>English · Ganda (native) · Kinyarwanda (limited working)</p>
+        </div>
+        <div class="card">
+          <h3>Top skills</h3>
+          <p>Security audits · Cyber defense · Penetration testing</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS & PROFILES -->
+    <section id="elsewhere">
+      <h2>Projects &amp; Profiles</h2>
+      <p class="sub">Busy as usual.</p>
+      <ul class="links">
+        <li><a href="projects/">Projects</a><span>Selected work and write-ups.</span></li>
+        <li><a href="https://github.com/rudegentleman">GitHub</a><span>Code, experiments and open-source tooling.</span></li>
+        <li><a href="https://linkedin.com/in/monsieurhud">LinkedIn</a><span>Professional profile and connections.</span></li>
+        <li><a href="https://twitter.com/monsieurHud">X / Twitter</a><span>Occasional thoughts on security.</span></li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="sub">If you’ve got something worth building, breaking, or securing, let’s talk.</p>
+      <p>
+        Email: <a href="#" id="email" rel="nofollow">Click to reveal</a><br>
+        Location: Greater Seattle Area, WA
+      </p>
+      <p style="color:var(--muted);font-size:.95rem">Always up for a good conversation, a good cup of coffee, or swapping war stories from the frontlines of cybersecurity.</p>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> Hood S. Mukiibi</span>
+    <span>Hosted on GitHub Pages</span>
+  </div>
+</footer>
+
+<script>
+  // Year
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Email obfuscation (assembled at click time to avoid simple scrapers)
+  (function(){
+    var el = document.getElementById('email');
+    var user = 'hudmukiibi', host = ['gmail','com'].join('.');
+    el.addEventListener('click', function(e){
+      e.preventDefault();
+      var addr = user + '@' + host;
+      el.textContent = addr;
+      el.href = 'mailto:' + addr;
+    }, {once:true});
+  })();
+
+  // Theme toggle (remembered if storage is available)
+  (function(){
+    var root = document.documentElement, btn = document.getElementById('themeBtn');
+    try { var saved = localStorage.getItem('theme'); if (saved) root.setAttribute('data-theme', saved); } catch(e){}
+    btn.addEventListener('click', function(){
+      var current = root.getAttribute('data-theme') ||
+        (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch(e){}
+    });
+  })();
+</script>
+</body>
+</html>
